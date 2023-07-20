@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
@@ -150,4 +156,65 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Buttons */
+.btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 3rem;
+    border: 0;
+    text-decoration: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background 0.12s;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: #2178ea;
+    color: #fff;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background: #00ccf0;
+    color: #fff;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn--accent:hover {
+    background: #f03101;
+    color: #fff;
+}
+
+.btn--outline {
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+}
+
+.btn--block {
+    display: inline-block;
+    width: 100%;
 }
