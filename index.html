@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/normalize.css" />
@@ -15,37 +15,30 @@
     <title>Smithified.com</title>
   </head>
   <body>
-    <div style="display: inline-block; width: 40rem; padding: 3rem">
-      <div class="card card--primary">
-        <header class="card__header">
-          <p>Lorem ipsum dolor sit amet.</p>
-        </header>
-        <div class="card__body">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            totam quod ab quasi similique quas.
-          </p>
+    <div style="width: 50%; padding: 4rem" class="plan">
+      <div class="plan">
+        <div class="card card--primary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--primary badge--small">10% off</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Item 1</li>
+              <li class="list__item">Item 2</li>
+              <li class="list__item">Item 3</li>
+            </ul>
+            <button class="btn btn--outline btn--block">click me!</button>
+          </div>
+          <!--^^div.card__body-->
         </div>
-        <!--card__body-->
+        <!--^^div.card__header-->
       </div>
-      <!--card__header-->
+      <!--^^div.card-->
     </div>
-    <!--temp-container-->
-    <div style="display: inline-block; width: 40rem; padding: 3rem">
-      <div class="card card--secondary">
-        <header class="card__header">
-          <p>Lorem ipsum dolor sit amet.</p>
-        </header>
-        <div class="card__body">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            totam quod ab quasi similique quas.
-          </p>
-        </div>
-        <!--card__body-->
-      </div>
-      <!--card__header-->
-    </div>
-    <!--temp-container-->
+    <!--^^div.plan-->
   </body>
 </html>
