@@ -353,3 +353,21 @@ p {
     }
 }
 
+/* Media Objects */
+.media {
+    display: flex;
+}
+
+.media__image {
+    margin-top: 1rem;
+}
+
+.media__title {
+    margin: 0 0;
+}
+
+.media__body {
+    margin-left: 2rem;
+}
+
+
