@@ -25,6 +25,7 @@ body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
+    color: var(--color-body-text);
 }
 
 h1, h2, h3 {
@@ -46,6 +47,11 @@ h3 {
 
 p {
     margin-top: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:1024) {
@@ -557,6 +563,39 @@ p {
 .collapsible--expanded .collapsible__content {
     max-height: 100%;
     opacity: 1;
+}
+
+/* Site Blocks */
+.site-block {
+    --padding-bottom: 6rem;
+    padding: 6rem 2rem;
+}
+
+.site-block--dark {
+    background: black;
+    color: #7b858b;
+}
+
+.site-block__header {
+    text-align: center;
+}
+
+.site-block__heading {
+    margin-top: 0;
+}
+
+.site-block--dark .site-block__heading {
+    color: #fff;
+}
+
+.site-block--skew-left {
+    padding-bottom: calc(var(--padding-bottom) + 4rem );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+ .site-block--skew-right {
+    padding-bottom: calc(var(--padding-bottom) + 4rem );
+     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 
