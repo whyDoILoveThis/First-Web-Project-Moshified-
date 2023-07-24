@@ -15,58 +15,19 @@
     <title>Smithified.com</title>
   </head>
   <body>
-    <section class="site-block container">
-      <header class="site-block__header">
-        <h2 class="site-block__heading">Heading2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-          iure?
-        </p>
-      </header>
-      <div style="width: 30%; padding: 4rem">
-        <div class="card card--primary">
-          <header class="card__header">
-            <p>Lorem ipsum dolor sit amet.</p>
-          </header>
-          <div class="card__body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              totam quod ab quasi similique quas.
-            </p>
-          </div>
-          <!--card__body-->
-        </div>
-        <!--card__header-->
-      </div>
-      <!--temp-container-->
-    </section>
-
-    <section class="site-block site-block--dark">
-      <header class="site-block__header">
-        <h2 class="site-block__heading">Heading2</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
-          officiis.
-        </p>
-      </header>
-    </section>
-
-    <section class="site-block site-block--dark site-block--skew-left">
-      <header class="site-block__header">
-        <h2 class="site-block__heading">Heading2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rem!</p>
-      </header>
-    </section>
-
-    <section class="site-block site-block--dark site-block--skew-right">
-      <header class="site-block__header">
-        <h2 class="site-block__heading">Heading2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, fugit.
-        </p>
-      </header>
-    </section>
-
+    <nav class="nav collapsible">
+      <a href="/"><img class="nav__brand" src="/css/images/logo.svg" alt="" /></a>
+      <svg class="icon icon--white collapsible__chevron nav__toggler">
+        <use href="css/images/icon-sprite-sheet.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__list-item"><a href="">Hosting</a></li>
+        <li class="nav__list-item"><a href="">VPS</a></li>
+        <li class="nav__list-item"><a href="">Domain</a></li>
+        <li class="nav__list-item"><a href="">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="/javascript/main.js"></script>
+    </html>
   </body>
-</html>
+    
