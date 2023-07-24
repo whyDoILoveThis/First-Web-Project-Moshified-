@@ -596,12 +596,12 @@ a {
 
 .site-block--skew-left {
     padding-bottom: calc(var(--padding-bottom) + 4rem );
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
- .site-block--skew-right {
-    padding-bottom: calc(var(--padding-bottom) + 4rem );
-     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+.site-block--skew-right {
+     padding-bottom: calc(var(--padding-bottom) + 4rem );
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
   /* * Navigation Menu */ 
@@ -647,7 +647,7 @@ a {
 
 .nav__list-item > a:hover{
     color: #fff;
-    text-shadow: 0 0 0.6px #ffffff;
+    text-shadow: 0 0 0.6px #fff;
 }
 
 @media screen and (min-width: 768px) {
