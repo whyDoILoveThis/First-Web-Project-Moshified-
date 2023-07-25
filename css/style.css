@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 8rem;
 }
 
 h2 {
@@ -686,7 +686,7 @@ a {
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin: 2rem 0 5rem;
   }
 
