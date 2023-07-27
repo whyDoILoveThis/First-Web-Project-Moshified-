@@ -15,82 +15,48 @@
     <title>Smithified.com</title>
   </head>
   <body>
-    <section
-      class="site-block site-block--dark site-block--skew-right block__showcase"
-    >
+    <section class="site-block">
       <header class="site-block__header">
-        <h2 class="site-block__heading">User Friendly Interface</h2>
+        <h2 class="site-block__heading">What our customers are saying</h2>
       </header>
-      <div class="container grid grid--cols-2">
-        <picture class="block__showcase__image">
-          <source
-            type="image/webp"
-            srcset="
-              /css/images/ipad/new/webp/ipad@1x.webp 1x,
-              /css/images/ipad/new/webp/ipad@2x.webp 2x
-            "
-          />
-          <source
-            type="image/png"
-            srcset="
-              /css/images/ipad/new/png/ipad@1x.png 1x,
-              /css/images/ipad/new/png/ipad@2x.png 2x
-            "
-          />
-
-          <img src="/css/images/ipad/new/png/ipad@2x.png" alt="" />
-        </picture>
-        <ul class="list">
-          <li class="list-item">
-            <div class="media">
-              <div class="media__image">
-                <img src="/css/images/snap.png" alt="" class="icon" />
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  magni praesentium cum delectus est, animi exercitationem
-                  excepturi consequatur quae.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="list-item">
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use href="css/images/icon-sprite-sheet.svg#growth"></use>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--cols-2">
+            <div class="testimonial__image">
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--small icon--white">
+                  <use href="css/images/icon-sprite-sheet.svg#quotes"></use>
                 </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  magni praesentium cum delectus est, animi exercitationem
-                  excepturi consequatur quae.
-                </p>
-              </div>
+              </span>
+              <img
+                src="/css/images/testimonial.jpg"
+                alt="A satisfied customer"
+              />
             </div>
-          </li>
-          <li class="list-item">
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use href="css/images/icon-sprite-sheet.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  magni praesentium cum delectus est, animi exercitationem
-                  excepturi consequatur quae.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            <blockquote class="quote">
+              <p class="quote___text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione veritatis molestiae dicta velit, laudantium nihil in
+                corrupti molestias accusantium ad?
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use href="css/images/icon-sprite-sheet.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">
+                      Cletus Snarwinsmicherakinsder
+                    </h3>
+                    <p class="quote__company">ABC Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </section>
   </body>
