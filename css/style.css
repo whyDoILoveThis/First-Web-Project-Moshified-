@@ -28,7 +28,7 @@ html {
 /* * Typography */
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.5;
     color: var(--color-body-text);
 }
@@ -57,6 +57,10 @@ p {
     margin-top: 0;
 }
 
+::selection {
+    background: #a7ed46;
+    color: #444444;
+}
 
 @media screen and (min-width:1024px) {
    
@@ -71,6 +75,7 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+    font-weight: 600;
   }
 
 }
@@ -142,7 +147,6 @@ a {
 
 /* * Lists */
 .list {
-    color: var(--color-headings);
     list-style: none;
     padding: 0;
 }
@@ -155,6 +159,7 @@ a {
 .list--tick {
     list-style-image: url(images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -426,6 +431,7 @@ a {
 /* * Media Objects */
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__image {
@@ -433,11 +439,11 @@ a {
 }
 
 .media__title {
-    margin: 0 0;
+    margin: 0 0 1.2rem 0;
 }
 
 .media__body {
-    margin-left: 2rem;
+    margin:0 2rem;
 }
 
 /* * Quotes */
@@ -627,9 +633,12 @@ a {
 
 .site-block__heading {
     margin-top: 0;
+    margin-bottom: 4.3rem;
 }
 
-.site-block--dark .site-block__heading {
+.site-block--dark h1,
+.site-block--dark h2,
+.site-block--dark h3 {
     color: #fff;
 }
 
@@ -780,6 +789,7 @@ a {
 }
 
 /* * Features Block */
+FIXME:v/*!add block modifier name*/
 
 .feature {
     gap: 4rem 2rem;
@@ -803,4 +813,27 @@ a {
         width: 100%;
     }
 }
-    
+
+/** Showcase Block */
+.block__showcase__image > img {
+    justify-self: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .block__showcase .grid {
+      grid-template-columns: 50% 50%;
+    }
+    .block__showcase__image  {
+      justify-self: end;
+    }
+    .block__showcase__image>img {
+      width: auto;
+      min-width: 700px;
+      max-width: 700px;
+    }
+  }
+
+
+
+
