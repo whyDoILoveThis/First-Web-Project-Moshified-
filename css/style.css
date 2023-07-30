@@ -1,3 +1,7 @@
+
+
+
+/*! GLOBAL STYLES !*/
 *,
 *::before,
 *::after {
@@ -25,7 +29,7 @@ html {
     margin: 0 auto;
 }
 
-/* * Typography */
+/** Typography */
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -80,7 +84,7 @@ p {
 
 }
 
-/* * Links */
+/** Links */
 a {
     text-decoration: none;
 }
@@ -110,7 +114,7 @@ a {
 
 }
 
-/* * Badges */
+/** Badges */
 .badge {
     border-radius: 20px;
     font-size: 2rem;
@@ -138,6 +142,8 @@ a {
 @media screen and (min-width: 1024px){
     .badge {
         font-size: 1.5rem;
+        display: block;
+        max-width: fit-content;
     }
 
     .badge--small {
@@ -145,7 +151,7 @@ a {
     }
 }
 
-/* * Lists */
+/** Lists */
 .list {
     list-style: none;
     padding: 0;
@@ -173,7 +179,7 @@ a {
     }
 }
     
-/* * Icons */
+/** Icons */
 .icon {
     width: 40px;
     height:40px;
@@ -207,7 +213,7 @@ a {
     background: var(--color-accent);
 }
 
-/* * Buttons */
+/** Buttons */
 .btn {
     border-radius: 40px;
     border: 0;
@@ -215,7 +221,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-decoration: 0;
     text-transform: uppercase;
@@ -287,7 +293,7 @@ a {
     }
 }
 
-/* * Input */
+/** Input */
 .input {
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
@@ -311,13 +317,14 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
     margin: 4px;
 }
 
-/* * Cards */
+/** Cards */
 .card {
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
@@ -350,7 +357,7 @@ a {
     background: #00cbef;
 }
 
-/* * Plans */
+/** Plans */
 .plan {
     transition: all 0.3s ease-out;
 }
@@ -428,7 +435,7 @@ a {
     }
 }
 
-/* * Media Objects */
+/** Media Objects */
 .media {
     display: flex;
     margin-bottom: 4rem;
@@ -446,7 +453,7 @@ a {
     margin:0 2rem;
 }
 
-/* * Quotes */
+/** Quotes */
 .quote {
     font-size: 3rem;
     font-style: italic;
@@ -497,7 +504,7 @@ a {
     }
 }
 
-/* * Grids */
+/** Grids */
 .grid {
     display: grid;
 }
@@ -514,7 +521,7 @@ a {
     } 
 }
 
-/* * Testimonials */
+/** Testimonials */
 .testimonial {
     padding: 4rem;
 }
@@ -546,7 +553,7 @@ a {
     }
 }
 
-/* * Callouts */
+/** Callouts */
 .callout {
     padding: 4rem;
     border-radius: 5px;
@@ -580,7 +587,7 @@ a {
     }
 }
 
-/* * Collapsibles */
+/** Collapsibles */
 .collapsible > * {
     transition: all 0.32s;
 }
@@ -616,7 +623,15 @@ a {
     transition: all .5s;
 }
 
-/* * Site Blocks */
+@media screen and (min-width: 1024px) {
+    .collapsible__content {
+        opacity: 1;
+        min-height: 100%;
+        transition: all 0s;
+    }
+}
+
+/** Site Blocks */
 .site-block {
     --padding-bottom: 6rem;
     padding: 6rem 2rem;
@@ -664,7 +679,7 @@ a {
     }
 }
 
-/* * Navigation Menu */ 
+/** Navigation Menu */ 
 .nav {
     background: #000;
     display: flex;
@@ -728,7 +743,7 @@ a {
     }
 }
 
-/* * Hero */
+/** Hero */
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
@@ -753,7 +768,7 @@ a {
     }
   }
 
-  /* * Domain Block */
+  /** Domain Block */
   .block__domain .input-group {
     box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
@@ -763,7 +778,7 @@ a {
 
   .block__domain__prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -778,7 +793,7 @@ a {
     }
   }
 
-  /* * Plans Block */
+  /** Plans Block */
   .block__plans .grid {
       gap: 8rem 6rem;
 }  
@@ -788,28 +803,26 @@ a {
     margin: 0 auto;
 }
 
-/* * Features Block */
-FIXME:v/*!add block modifier name*/
-
-.feature {
+/** Features Block */
+.block__feature {
     gap: 4rem 2rem;
     margin: 12rem 0rem;
 }
 
-.feature:first-of-type {
+.block__feature:first-of-type {
     margin-top: 6rem;
 }
 
-.feature__heading {
+.block__feature__heading {
     margin: 0 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .feature:nth-of-type(even) .feature__content {
+    .block__feature:nth-of-type(even) .block__feature__content {
         order: 2;
     }
     
-    .feature__image {
+    .block__feature__image {
         width: 100%;
     }
 }
