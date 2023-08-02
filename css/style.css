@@ -555,12 +555,22 @@ a {
 
 /** Callouts */
 .callout {
+    margin: 4rem;
     padding: 4rem;
     border-radius: 5px;
+    position: relative;
+    top: 8rem;
 }
 
 .callout--primary {
     background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
 }
 
 .callout__content {
@@ -626,7 +636,7 @@ a {
 @media screen and (min-width: 1024px) {
     .collapsible__content {
         opacity: 1;
-        min-height: 100%;
+        min-height: 130%;
         transition: all 0s;
     }
 }
@@ -659,23 +669,23 @@ a {
 
 .site-block--skew-left {
     padding-bottom: calc(var(--padding-bottom) + 4rem );
-     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
 }
 
 .site-block--skew-right {
      padding-bottom: calc(var(--padding-bottom) + 4rem );
-     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
 }
 
 @media screen and (min-width: 768px) {
     .site-block--skew-left {
         padding-bottom: calc(var(--padding-bottom) + 4rem );
-         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+         clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     }
     
     .site-block--skew-right {
          padding-bottom: calc(var(--padding-bottom) + 4rem );
-         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     }
 }
 
@@ -794,6 +804,9 @@ a {
   }
 
   /** Plans Block */
+  .block__plans {
+    margin-bottom: 15rem;
+  }
   .block__plans .grid {
       gap: 8rem 6rem;
 }  
@@ -814,7 +827,11 @@ a {
 }
 
 .block__feature__heading {
-    margin: 0 1rem;
+    margin: 1rem 0;
+}
+
+.block__feature__image {
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
